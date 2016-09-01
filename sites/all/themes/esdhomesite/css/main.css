@@ -3704,6 +3704,9 @@ table.hover tr:nth-of-type(even):hover {
     -ms-flex-order: 6;
     order: 6; } }
 
+.hero-container {
+  height: 450px; }
+
 header section#main-nav {
   background: #007681;
   padding: 14px; }
@@ -3794,9 +3797,7 @@ div#nygov-universal-footer {
 
 div#tab-nav ul.tabs.primary {
   background: white; }
-  div#tab-nav ul.tabs.primary li.active {
-    background: blue; }
-    div#tab-nav ul.tabs.primary li.active a.active {
+  div#tab-nav ul.tabs.primary li.active a.active {
+    color: #0a0a0a !important; }
+    div#tab-nav ul.tabs.primary li.active a.active span {
       color: #0a0a0a !important; }
-      div#tab-nav ul.tabs.primary li.active a.active span {
-        color: #0a0a0a !important; }
