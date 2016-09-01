@@ -8,6 +8,11 @@ html {
 	position: relative;
 }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 @import
 	'typography/fonts.scss',

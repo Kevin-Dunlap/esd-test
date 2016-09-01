@@ -7,20 +7,7 @@
 	<!-- Main Navigation -->
 	
 	
-	
-	<?php print theme(
-		'links__system_main_menu', 
-		array(
-			'links' => $main_menu, 
-			'attributes' => array(
-				'id' => 'main-menu', 
-				'class' => array(
-					'links', 
-					'inline', 
-					'clearfix')
-				), 
-			'heading' => t('Main menu'))); 
-	?>	
+		
 	
 	
 	
@@ -39,18 +26,19 @@
 				</div>
 				<div class="column small-8 small-offset-1">
 					<nav>
-						<ul class="proxima">
-							<li><a href="">Why NYS?</a>
-							</li>
-							<li><a href="">Doing Business in NYS</a>
-							</li>
-							<li><a href=""><span>Industries</span></a>
-							</li>
-							<li><a href=""><span>Regions</span></a>
-							</li>
-							<li><a href=""><span>About Us</span></a>
-							</li>
-						</ul>
+						<?php print theme(
+							'links__system_main_menu', 
+							array(
+								'links' => $main_menu, 
+								'attributes' => array(
+									'id' => 'main-menu', 
+									'class' => array(
+										'links', 
+										'inline', 
+										'clearfix')
+									), 
+								'heading' => t(''))); 
+						?>
 					</nav>
 				</div>
 			</div>
@@ -81,7 +69,7 @@
 </header>
 
 
-	<div class="page-wrapper">
+	<div class="page-wrapper group">
 
 		<?php if ($page['highlighted']): ?>
 			<div id="highlighted"><?php print render($page['highlighted']); ?></div>

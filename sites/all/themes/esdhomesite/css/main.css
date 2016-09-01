@@ -8,6 +8,11 @@ html {
   font-family: arial;
   position: relative; }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 @font-face {
   font-family: 'Oswald';
   src: url("fonts/Oswald-Regular.eot");
