@@ -6,6 +6,25 @@
 	
 	<!-- Main Navigation -->
 	
+	
+	
+	<?php print theme(
+		'links__system_main_menu', 
+		array(
+			'links' => $main_menu, 
+			'attributes' => array(
+				'id' => 'main-menu', 
+				'class' => array(
+					'links', 
+					'inline', 
+					'clearfix')
+				), 
+			'heading' => t('Main menu'))); 
+	?>	
+	
+	
+	
+	
 	<section id="main-nav">
 		<div class="row align-middle">
 				<div class="column small-3">
@@ -63,29 +82,24 @@
 
 
 	<div class="page-wrapper">
-		<div class="row">
-			<div class="column small-12">
-	
-	<?php if ($page['highlighted']): ?>
-		<div id="highlighted"><?php print render($page['highlighted']); ?></div>
-	<?php endif; ?>
 
-    <?php if ($tabs): ?>
-    	<div id="tab-nav">
-    		<?php print render($tabs); ?>
-    	</div>
-    <?php endif; ?>
-    
-    <?php print render($page['help']); ?>
-    
-    <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+		<?php if ($page['highlighted']): ?>
+			<div id="highlighted"><?php print render($page['highlighted']); ?></div>
+		<?php endif; ?>
 	
-	<?php
-		print render($page['content']);
-	?>
+	    <?php if ($tabs): ?>
+	    	<div id="tab-nav">
+	    		<?php print render($tabs); ?>
+	    	</div>
+	    <?php endif; ?>
+	    
+	    <?php print render($page['help']); ?>
+	    
+	    <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+		
+		<?php
+			print render($page['content']);
+		?>
 	
-	
-			</div>
-		</div>
 	</div>
 
