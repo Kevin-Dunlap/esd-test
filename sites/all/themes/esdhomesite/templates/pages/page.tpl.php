@@ -63,8 +63,6 @@
 
 
 	<div class="page-wrapper">
-		<div class="row">
-			<div class="column small-12">
 	
 	<?php if ($page['highlighted']): ?>
 		<div id="highlighted"><?php print render($page['highlighted']); ?></div>
@@ -84,8 +82,5 @@
 		print render($page['content']);
 	?>
 	
-	
-			</div>
-		</div>
 	</div>
 
