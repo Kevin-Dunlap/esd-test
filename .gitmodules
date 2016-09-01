@@ -16,3 +16,19 @@
 	path = sites/all/modules/contrib/entityreference
 	url = https://git.drupal.org/project/entityreference.git
 	branch = 7.x-1.x
+[submodule "sites/all/modules/contrib/admin_menu"]
+	path = sites/all/modules/contrib/admin_menu
+	url = https://git.drupal.org/project/admin_menu.git
+	branch = 7.x-3.x
+[submodule "sites/all/modules/contrib/ds"]
+	path = sites/all/modules/contrib/ds
+	url = https://git.drupal.org/project/ds.git
+	branch = 7.x-2.x
+[submodule "sites/all/modules/contrib/token"]
+	path = sites/all/modules/contrib/token
+	url = https://git.drupal.org/project/token.git
+	branch = 7.x-1.x
+[submodule "sites/all/modules/contrib/pathauto"]
+	path = sites/all/modules/contrib/pathauto
+	url = https://git.drupal.org/project/pathauto.git
+	branch = 7.x-1.x
