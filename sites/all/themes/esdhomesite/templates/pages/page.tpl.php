@@ -86,7 +86,7 @@
 		<?php if ($page['highlighted']): ?>
 			<div id="highlighted"><?php print render($page['highlighted']); ?></div>
 		<?php endif; ?>
-	
+
 	    <?php if ($tabs): ?>
 	    	<div id="tab-nav">
 	    		<?php print render($tabs); ?>
@@ -100,6 +100,6 @@
 		<?php
 			print render($page['content']);
 		?>
-	
+
 	</div>
 
