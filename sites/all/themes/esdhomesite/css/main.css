@@ -3710,7 +3710,26 @@ table.hover tr:nth-of-type(even):hover {
     order: 6; } }
 
 .hero-container {
-  height: 450px; }
+  height: 320px; }
+  @media only screen and (min-width: 768px) {
+    .hero-container {
+      height: 307px; } }
+  @media only screen and (min-width: 1280px) {
+    .hero-container {
+      height: 512px; } }
+  .hero-container h1 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 0;
+    margin-bottom: 14px;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: "Proxima Nova Bold", Helvetica, Arial, sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    color: #fff; }
+  .hero-container .centered {
+    margin: 0 auto; }
 
 header section#main-nav {
   background: #007681;
