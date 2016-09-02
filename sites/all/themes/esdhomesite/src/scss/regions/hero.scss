@@ -1,3 +1,31 @@
+// move 
+$tablet: 768px;
+$desktop: 1280px;
+$mq-tablet: 'only screen and (min-width:' + ($tablet) + ')';
+$mq-desktop: 'only screen and (min-width:' + ($desktop) + ')';
+
+// move
+@mixin mq($query) { 
+	@media #{unquote($query)} {
+		@content
+	}
+}
+
 .hero-container {
-	height:450px;
+	height:320px;
+	@include mq($mq-tablet) {
+		height: 307px;
+	}
+	@include mq($mq-desktop) {
+		height: 512px;
+	}
+	h1 {
+		@include typeset(h1);
+		font-size: 48px; // remove after typography variables are finalized
+		line-height: 58px; // remove after typography variables are finalized
+		color:#fff;
+	}
+	.centered {
+		margin:0 auto;
+	}
 }
