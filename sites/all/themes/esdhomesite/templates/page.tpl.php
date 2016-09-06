@@ -5,13 +5,7 @@
 <header>
 	
 	<!-- Main Navigation -->
-	
-	
-		
-	
-	
-	
-	
+
 	<section id="main-nav">
 		<div class="row align-middle">
 				<div class="column small-3">
