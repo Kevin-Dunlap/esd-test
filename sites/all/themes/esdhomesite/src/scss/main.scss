@@ -14,18 +14,8 @@ html {
   clear: both;
 }
 
-$tablet: 768px;
-$desktop: 1280px;
-$mq-tablet: 'only screen and (min-width:' + ($tablet) + ')';
-$mq-desktop: 'only screen and (min-width:' + ($desktop) + ')';
-
-@mixin mq($query) { 
-	@media #{unquote($query)} {
-		@content
-	}
-}
-
 @import
+	'utilities/mixins.scss',
 	'typography/fonts.scss',
 	'typography/typesets.scss',
 	'foundation/foundation',
