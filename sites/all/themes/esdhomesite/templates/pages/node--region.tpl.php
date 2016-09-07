@@ -6,7 +6,9 @@
 	</div>
 </div>
 
-<?php print render($content['field_big_number_breaker']); ?>
+<?php if (isset($content['field_big_number_breaker'])): ?>
+	<?php print render($content['field_big_number_breaker']); ?>
+<?php endif; ?>
 
 <div class="row">
 	<div class="small-12 columns">
